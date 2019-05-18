@@ -1,0 +1,20 @@
+<div class="mat-elevation-z3">
+  <mat-table #table matSort [dataSource]="dataSource" class="mat-table-dense">
+
+    <ng-template [ngForOf]="displayColumns" ngFor let-col>
+      ignore first and last to avoid duplication for select and actions columns
+      <ng-container matColumnDef="{{col}}">
+
+        <mat-header-cell *matHeaderCellDef mat-sort-header>{{col | uppercase}}
+        </mat-header-cell>
+        <mat-cell *matCellDef="let item">{{item[col]}}</mat-cell>
+      </ng-container>
+    </ng-template>
+
+
+    <mat-header-row *matHeaderRowDef="displayColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayColumns;"></mat-row>
+  </mat-table>
+</div>
+
+<!-- ====================================== -->

@@ -1,0 +1,67 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item nav-profile">
+      <div class="nav-link">
+        <div class="user-wrapper">
+          <div class="profile-image">
+            <img src="../../../assets/images/faces-clipart/pic-1.png" alt="image" />
+          </div>
+          <div class="text-wrapper">
+            <p class="profile-name">Admin</p>
+            <div>
+              <small class="designation text-muted">Manager</small>
+              <span class="status-indicator online"></span>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="btn btn-success btn-block">New Project
+          <i class="mdi mdi-plus"></i>
+        </button> -->
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/dashboard" routerLinkActive="active">
+        <i class="menu-icon mdi mdi-television"></i>
+        <span class="menu-title">Dashboard</span>
+      </a>
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" routerLink="/user" routerLinkActive="active">
+        <i class="menu-icon mdi mdi-account-multiple-plus"></i>
+        <span class="menu-title">Users</span>
+      </a>
+    </li> -->
+
+
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+        <i class="menu-icon mdi mdi-account-multiple-plus"></i>
+        <span class="menu-title">User Pages</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" id="auth">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/user"> Users </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Transactions </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Wallets </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> History </a>
+          </li>
+
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/Transactions" routerLinkActive="active">
+        <i class="menu-icon mdi mdi-dna"></i>
+        <span class="menu-title">Transactions</span>
+      </a>
+    </li>
+  </ul>
+</nav>
